@@ -7,6 +7,22 @@
   <title>Intro to Authentication</title>
 </head>
 <body>
+
+  <nav>
+      <% if (user) { %>
+        <h2>User has logged in</h2>
+        <a href="user/logout.ejs" class="logoutdisplay">logout</a>
+        <h4> Hello, </h4> <% user %$> </h4>
+      <%  }else{ %>
+
+      <a href="user/login.ejs" class="loginDisplay">login</a>
+
+      <% } %>
+      
+    <div class "logindisplay">
+    </div>
+
+  </nav>
   <h1>Intro to Authentication</h1>
   <%- body %> 
   
